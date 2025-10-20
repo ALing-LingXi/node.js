@@ -1,0 +1,9 @@
+{
+  "name": "05express_demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
