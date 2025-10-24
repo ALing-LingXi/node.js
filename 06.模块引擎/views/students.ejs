@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+  // <%= %>在ejs中输出内容时，它会自动对字符串中的特殊符号进行转义 &lt;
+  //    这个设计主要是为了避免 xss 攻击
+  // <%- %> 直接将内容输出
+  // <% %>  可以在其中直接编写js代码，js代码会在服务器中执行</script>
+</head>
+<body>  
+  <form action="/stM" method="post">
+    <table>
+      <th>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>性别</td>
+      </th>
+      <tr>
+        <td><%=STUDENTS[0].name %></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
